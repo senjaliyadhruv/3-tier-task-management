@@ -167,8 +167,3 @@ app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
   console.log(`📊 API available at http://localhost:${PORT}/api`);
 });
-
-// Simple root route so GET / does not 404
-app.get('/', (req, res) => {
-  res.send('Backend up — visit /api for the API endpoints');
-});
